@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar { /*Remoção da barra de scroll*/
+    width: 0px;
+    background: transparent;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+}
+
+h3 {
+    color: black;
+    background-color: white;
+    height: 4rem;
+}
+
+p {
+    color: white;
+    font-size: 1.6rem;
+}
+
+/* ALTERAÇÕES BOOTSTRAP - Para adaptar o bootstrap ao meu código */
+
+    /*BOTÕES BOOTSTRAP*/
+    .btn-primary {
+        color: #fff;
+        background-color: #FFAA00;
+        border-color:#FFAA00;
+        padding: .75rem 5rem;
+        font-size: 1.6rem;
+        border-radius: 50rem;
+        font-weight: 700;
+    }
+
+    .btn-primary:focus {
+        background-color: #FFAA00;
+        border-color: #FFAA00;
+    }
+
+    .btn-primary:hover {
+        transform: scale(1.1);
+    }
+
+    .btn-secondary {
+        color: #fff;
+        background-color:   #3A3737;
+        border-color: #3A3737;
+        padding: .75rem 5rem;
+        font-size: 1.6rem;
+        border-radius: 50rem;
+        font-weight: 700;
+    }
+
+    .btn-secondary:focus {
+        background-color:  #3A3737;
+        border-color: #3A3737;
+    }
+
+    .btn-secondary:hover {
+        transform: scale(1.1);
+    }
+
+    /* FINAL BOTÕES BOOTSTRAP*/
+
+    /*FORMULÁRIOS BOOTSTRAP*/
+    .form-check-label {
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .form-label {
+        color: white;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .form-control {
+        font-size: 1.6rem;
+    }
+
+    .form-select {
+        font-size: 1.6rem;
+    }
+
+    .form-check {
+        padding-left: 2.5rem;
+    }
+
+    .form-check-input {
+        margin-top: 0.6em;
+    }
+
+    /* FINAL FORMULÁRIOS BOOTSTRAP*/
+/* FINAL ALTERAÇÕES BOOTSTRAP */
+
+/*GERAIS*/
+.textCenter {
+    text-align: center;
+}
+
+.escondido {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.mt-5rem {
+    margin-top: 5rem;
+}
+/*FINAL GERAIS*/
+
+/* CORES BACKGROUND */
+.bgCinzento {
+    background-color: #3A3737;
+}
+
+.bgLaranja {
+    background-color: #FFAA00;
+}
+
+.bgAzul {
+    background-color: #0047B3;
+}
+
+.bgCreme {
+    background-color: #A18A7B;
+}
+
+
+.flexCentrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FINAL CORES BACKGROUND */
+
+/*MENU NAVEGAÇÃO*/
+
+    .somAtivo {
+        fill: white;
+        height: 2rem;
+    }
+
+    /*MENU FECHADO*/
+    .svgBarras {
+        fill: white;
+        height: 2rem;
+    }
+
+    .logoTamanho{
+        height: 2rem;
+    }
+
+    .somDireita {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /*MENU ABERTO*/
+    nav {
+        padding: 1.5rem;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    nav p {
+        font-size: 1.2rem;
+    }
+
+    nav a:hover {
+        color: white;
+        transform: scale(1.1);
+    }
+
+    .fecharFlex {
+        display: flex;
+        font-weight: bold;
+    }
+
+    .svgFechar {
+        fill: white;
+        padding-right: 1rem;
+    }
+
+    .orgFlex {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .bordaBaixo {
+        border-block-end: 1px solid white;
+        padding: 0.5rem 0;
+    }
+
+    .bordaDireita {
+        border-right: 1px solid white;
+    }
+
+/* FINAL MENU NAVEGAÇÃO*/

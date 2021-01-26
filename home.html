@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAAT</title>
+
+    <!-- BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- MEUS STYLES-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+    <audio id="audio" class="escondido" loop >
+        <source src="images/pump.mp3" type="audio/mpeg">
+        O teu browser não suporta audio
+    </audio>
+   
+    <!--NAVEBAR-->
+    <nav id="menuFechado" class="bgCinzento fixed-top">
+
+        <div class="row">
+            <div class="col-md-4">
+                <svg onclick="controlarMenu('fechado')" class="svgBarras" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+            </div>
+
+            <div class="col-md-4 flexCentrar">
+                <a href="home.html"><img src="images/LogoClaro.svg" alt="logo" class="logoTamanho"></a>
+            </div>
+
+           <!--SOM-->
+            <div class="col-md-4 somDireita">
+                <div id="on" class="sound escondido" onclick="controlarSom('on')">
+                    <svg class="somAtivo" width="24" height="24" viewBox="0 0 24 24"><path d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"/></svg>
+                </div>
+                <div id="off" class="sound" onclick="controlarSom('off')">
+                    <svg class="somAtivo" width="24" height="24" viewBox="0 0 24 24"><path d="M22 1.269l-18.455 22.731-1.545-1.269 3.841-4.731h-1.827v-10h4.986v6.091l2.014-2.463v-3.628l5.365-2.981 4.076-5.019 1.545 1.269zm-10.986 15.926v.805l8.986 5v-16.873l-8.986 11.068z"/></svg>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--MENU ESCONDIDO-->
+    <nav id="menuAberto" class="escondido bgCinzento fixed-top">
+
+        <div class="row bordaBaixo">
+            <div class="col-md-4 fecharFlex">
+                <svg onclick="controlarMenu('aberto')" class="svgFechar" width="24" height="24" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+                <p>FECHAR</p>
+
+            </div>
+
+            <div class="col-md-4 flexCentrar">
+                <div id="on2" class="sound escondido" onclick="controlarSom('on')">
+                    <svg class="somAtivo" width="24" height="24" viewBox="0 0 24 24"><path d="M6 7l8-5v20l-8-5v-10zm-6 10h4v-10h-4v10zm20.264-13.264l-1.497 1.497c1.847 1.783 2.983 4.157 2.983 6.767 0 2.61-1.135 4.984-2.983 6.766l1.498 1.498c2.305-2.153 3.735-5.055 3.735-8.264s-1.43-6.11-3.736-8.264zm-.489 8.264c0-2.084-.915-3.967-2.384-5.391l-1.503 1.503c1.011 1.049 1.637 2.401 1.637 3.888 0 1.488-.623 2.841-1.634 3.891l1.503 1.503c1.468-1.424 2.381-3.309 2.381-5.394z"/></svg>
+                </div>
+                <div id="off2" class="sound" onclick="controlarSom('off')">
+                    <svg class="somAtivo" width="24" height="24" viewBox="0 0 24 24"><path d="M22 1.269l-18.455 22.731-1.545-1.269 3.841-4.731h-1.827v-10h4.986v6.091l2.014-2.463v-3.628l5.365-2.981 4.076-5.019 1.545 1.269zm-10.986 15.926v.805l8.986 5v-16.873l-8.986 11.068z"/></svg>
+                </div>
+            </div>
+
+            <div class="col-md-4 orgFlex">
+                <a href="junta-teNos.html">JUNTA-TE A NÓS!</a>
+
+                <a href="home.html#home3">CONTACTOS</a>
+
+                <div>
+                    <a href="https://facebook.com" class="px-3"><i class="fa fa-facebook"></i></a>
+
+                    <a href="https://instagram.com" class="px-3"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+           <div class="col-md-4">
+                <a href="modalidades.html" class="flexCentrar py-3 bordaDireita">MODALIDADES</a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="mapaAulas.html" class="flexCentrar py-3 bordaDireita">MAPA DE AULAS</a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="nutricao.html" class="flexCentrar py-3">NUTRIÇÃO</a>
+            </div>
+        </div>
+    </nav>
+    <!--FINAL NAVEBAR-->
+
+    <section id="home1" class="bgLaranja">
+        <!--LOGO-->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-xs-12 textCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 624.9 171.88"><defs><style>.cls-1{stroke:#000;}.cls-1,.cls-2,.cls-3{stroke-miterlimit:10;stroke-width:5px;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#fff;}.cls-3{fill:#fff;}</style></defs><title>Ativo 2</title><g id="Camada_2" data-name="Camada 2"><g id="Camada_3" data-name="Camada 3"><polygon points="400.06 2.5 373.26 2.5 346.45 2.5 298.96 162.59 352.57 162.59 373.26 117.39 393.94 162.59 447.55 162.59 400.06 2.5"/><polygon class="cls-1" points="215.47 2.5 188.66 2.5 161.85 2.5 114.36 162.59 167.98 162.59 188.66 117.39 209.34 162.59 262.96 162.59 215.47 2.5"/><path class="cls-2" d="M188.47,118.83s-30.6-35.56-23.75-46.73c5.26-8.57,34.41-8.2,40.22,0C212.09,82.21,188.47,118.83,188.47,118.83Z"/><circle class="cls-3" cx="188.66" cy="131.41" r="37.97"/><line class="cls-2" x1="314.47" y1="65.81" x2="432.04" y2="65.81"/><line class="cls-2" x1="442.17" y1="42.82" x2="442.17" y2="88.8"/><line class="cls-2" x1="455.02" y1="49.67" x2="455.02" y2="82.16"/><line class="cls-2" x1="469.28" y1="74.8" x2="469.28" y2="57.28"/><line class="cls-2" x1="304.34" y1="42.82" x2="304.34" y2="88.8"/><line class="cls-2" x1="291.5" y1="49.67" x2="291.5" y2="82.16"/><line class="cls-2" x1="277.24" y1="74.8" x2="277.24" y2="57.28"/><path d="M555,20H506.25V2.41H624.9V20h-49V162.68H555Z"/><path d="M0,3H85.67V20.24H20.53V73.1H80.71v17H20.53v72H0Z"/></g></g></svg>    
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-xs-12 textCenter">
+                    <h1>Fitness Above all things</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--HOME 2-->
+
+    <section id="home2" class="bgCinzento">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="textCenter">BEM VINDO(A) AO FAAT!</h2>                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="textCenter">Este é o nosso espaço</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <video class="video" controls>
+                        <source src="images/faat.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- FINAL HOME 2-->
+
+<!--HOME 3-->
+    <section id="home3" class="bgAzul">
+
+        <div class="row pt-5">
+            <div class="col-xs-12 col-md-6 pt-5">
+                <div class="home3Tabelas">
+                    <!--TABELA HORÁRIOS-->
+                    <table class="tabelaHome"> 
+                        <tr>
+                            <td class="alinhaDireita"><strong>SEGUNDA A SEXTA</strong></td>
+                            <td class="alinhaEsquerda">07H - 22H</td>
+                        </tr>
+        
+                        <tr>
+                            <td class="alinhaDireita"><strong>SÁBADO</strong></td>
+                            <td class="alinhaEsquerda">09H - 14H . 16h - 20H</td>
+                        </tr>
+        
+                        <tr>
+                            <td class="alinhaDireita"><strong>DOMINGO</strong></td>
+                            <td class="alinhaEsquerda">ENCERRADO</td>
+                        </tr>
+        
+                        <tr>
+                            <td class="alinhaDireita"><strong>FERIADOS</strong></td>
+                            <td class="alinhaEsquerda">ENCERRADO</td>
+                        </tr>
+                    </table>
+                    <!-- FINAL TABELA HORÁRIOS-->
+        
+                    <!--TABELA CONTACTOS-->
+                    <table class="tabelaHome">
+                        <tr>
+                            <td class="alinhaDireita"><strong>TELEFONE</strong></td>
+                            <td class="alinhaEsquerda">239 645 999</td>
+                        </tr>
+        
+                        <tr>
+                            <td class="alinhaDireita"><strong>TELEMÓVEL</strong></td>
+                            <td class="alinhaEsquerda">913 789 230</td>
+                        </tr>
+        
+                        <tr>
+                            <td class="alinhaDireita"><strong>E-MAIL</strong></td>
+                            <td class="alinhaEsquerda">geral@faat.pt</td>
+                        </tr>
+                    </table>
+                    <!--FINAL TABELA CONTACTOS-->
+        
+                    <!--TABELA REDES SOCIAIS-->
+                     <table class="tabelaHome">
+                        <tr>
+                            <td colspan="2" class="alinhaCentro"><strong>SEGUE-NOS!</strong></td> <!--Colspan para junção das 2 linhas-->
+                        </tr>
+        
+                        <tr>
+                            <td class="alinhaCentro"><a href="https://facebook.com"><i class="fa fa-facebook"></i></a></td>
+                            <td class="alinhaCentro"><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></td>
+                        </tr>
+                     </table>
+                    <!--FINAL TABELA REDES SOCIAIS-->
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 pt-5">
+                <!--MAPA-->
+                <div class="relative">            
+                    <div id="myCanvas">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.7718513478367!2d-78.54848868412537!3d44.540303802631506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDMyJzI1LjEiTiA3OMKwMzInNDYuNyJX!5e0!3m2!1sde!2sde!4v1461144974851" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <div id="myCanvasDiv">
+                            <canvas id="canvas"></canvas>
+                        </div>
+                    </div>                    
+                </div>
+
+                <p>
+                    Urbanização Quinta de S. Luís, Lote 11, Frações A/B
+                    <br>
+                    3140-348 Pereira, Montemor-o-Velho
+                </p>
+                <!-- FINAL MAPA-->
+            </div>
+        </div>
+
+    </section>
+<!-- FINAL HOME 3-->
+
+    <!--HOME 4-->
+    <section id="home4" class="bgLaranja">
+        <h2 class="textCenter">CONTACTA-NOS</h2>
+
+        <p class="mb-5 textCenter">Preenche o seguinte formulário para obteres mais informações sobre as condições de inscrição no Ginásio FAAT.</p>
+
+        <!--FORMULÁRIO-->
+        <div class="container">
+            <form>
+                <div class="row mb-5"> 
+                    <div class="col-xs-12 col-sm-6 col-md-4"> 
+                        <input type="text" class="form-control" name="nome" placeholder="NOME*" required>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <input type="number" class="form-control" name="contacto" placeholder="CONTACTO*" required>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <input type="email" class="form-control" name="email" placeholder="E-MAIL*" required>
+                    </div>
+
+                </div>
+                <div class="row mb-5">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <select class="form-select" name="assunto" id="assunto" required>
+                            <option value="" disabled selected>ASSUNTO*</option>
+                            <option value="inscricao">Inscrição</option>
+                            <option value="horarios">Horários</option>
+                            <option value="marcarVisita">Marcar Visita</option>
+                            <option value="desmarcarAula">Desmarcar Aula</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <select class="form-select" name="horaContacto" id="horaContacto" required>
+                            <option value="" disabled selected>MELHOR HORA DE CONTACTO</option>
+                            <option value="manha">Manhã 07H - 13H</option>
+                            <option value="tarde">Tarde 14H - 19H</option>
+                            <option value="noite">Noite 20H - 22H</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="row mb-5">
+                    <div class="col-xs-12">
+                        <textarea class="form-control" name="mensagem" rows="10" cols="30" placeholder="MENSAGEM*" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-xs-12 textCenter">
+                        <button type="submit" class="btn btn-secondary">ENVIAR</button>
+                    </div>
+                </div>
+            </form>	
+            <!--FINAL FORMULÁRIO-->	
+        </div>
+    </section>
+    <!-- FINAL HOME 4-->
+
+    <!--BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>

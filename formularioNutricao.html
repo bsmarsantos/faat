@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAAT</title>
+
+    <!-- BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- MEUS STYLES-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/formularioNutricao.css">
+</head>
+
+<body>
+    <section id="formularioNutricao" class="bgLaranja">
+
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-xs-12">
+                    <h2 class="textCenter">FORMULÁRIO DE AVALIAÇÃO NUTRICIONAL</h2>
+                </div>
+            </div>
+
+            <!--VIDEO YOUTUBE-->
+            <div class="row mb-5">
+                <div class="col-md-12 videoNutricao">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8mSfZYkECNM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+                </iframe>
+                </div>
+            </div>
+
+
+            <!--FORMULÁRIO-->
+
+            <form>
+                <!--NOME E EMAIL-->
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <label for="formNome" class="form-label">NOME</label>
+                        <input type="text" class="form-control" name="nome" id="formNome" placeholder="Bárbara Santos" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="formEmail" class="form-label">E-MAIL</label>
+                        <input type="email" class="form-control" id="formEmail" name="email" placeholder="geral@faat.pt" required>
+                    </div>
+                </div>
+                
+                 <!--DATA, CONTACTO, ALTURA, PESO-->
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <label for="formDataNascimento" class="form-label">DATA DE NASCIMENTO</label>
+                        <input type="date" class="form-control" id="formDataNascimento" name="dataNascimento" required>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="formContacto" class="form-label">CONTACTO</label>
+                        <input type="number" class="form-control" id="formContacto" name="contacto" placeholder="913 789 230" required>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="formAltura" class="form-label">ALTURA EM CM</label>
+                        <input type="number" class="form-control" name="altura" id="formAltura" placeholder="157 cm" required>
+                    </div>
+
+                    
+                    <div class="col-md-3">
+                        <label for="formPeso" class="form-label">PESO</label>
+                        <input type="number" class="form-control" name="peso" id="formPeso" placeholder="60 KG" required>
+                    </div>
+                </div>
+                
+                <!--GENERO-->
+                <div class="row mb-5">
+                    <div class="col-md-3">    
+                        <label class="form-label">GÉNERO</label>
+
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="genero" id="masculino" value="masculino">                            
+                            <label for="masculino" class="form-check-label">Masculino</label>
+                        </div>                    
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="genero" id="feminino" value="feminino"> 
+                            <label for="feminino" class="form-check-label">Feminino</label>
+                        </div>                    
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="genero" id="outro" value="outro">                       
+                            <label for="outro" class="form-check-label">Outro</label>
+                        </div>                           
+                    </div>
+
+                    <!--OBJETIVO A ALCANÇAR-->
+                    <div class="col-md-6">
+                        <label class="form-label">QUAL O OBJETIVO QUE PRETENDE ALCANÇAR?</label>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="objetivo1" name="opcao1" value="perderPeso">
+                            <label for="objetivo1" class="form-check-label">Perder Peso</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="objetivo2" name="opcao2" value="ganharPeso">
+                            <label for="objetivo2" class="form-check-label">Ganhar Peso</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="objetivo3" name="opcao3" value="manterPeso">
+                            <label for="objetivo3" class="form-check-label">Manutenção de Peso</label>
+                        </div>
+                    </div>
+
+                    <!--REFEIÇÕES-->
+                    <div class="col-md-3">
+                        <label for="quantity" class="form-label">QUANTAS REFEIÇÕES FAZ POR DIA?</label>
+                        <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="20">
+                    </div>
+
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        
+                          <!--EXERCÍCIO FÍSICO-->
+                        <label class="form-label">PRATICA EXERCÍCIO FÍSICO? SE SIM, QUANTAS VEZES POR SEMANA?</label> 
+
+                        <label for="exercicio" class="form-label">Exercício Físico (entre 0 e 7):</label>
+                        <input type="range" class="form-range" id="ef" name="exercicio" min="0" max="7">
+
+                          <!--ANÁLISES-->
+                        <label class="form-label">FEZ ANÁLISES AO SANGUE RECENTEMENTE? SE SIM,POR FAVOR ANEXE O FICHEIRO.</label>
+
+                        <label for="ficheiro" class="form-label">Seleciona um ficheiro:</label>
+                        <input type="file" class="form-control" id="myfile" name="myfile">
+                    </div>
+
+                    <div class="col-md-6">
+                        <!--ÁGUA-->
+
+                        <label class="form-label">QUE QUANTIDADE DE ÁGUA BEBE POR DIA?</label>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="agua1" name="check1" value="beberAgua">
+                            <label for="agua1" class="form-check-label">Menos de 0.5L</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="agua2" name="check2" value="beberAgua">
+                            <label for="agua2" class="form-check-label">Entre 0.5L e 1L</label>
+                        </div>
+
+                        
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="agua3" name="check3" value="beberAgua">
+                            <label for="agua3" class="form-check-label">Entre 1L e 1.5L</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="agua4" name="check4" value="beberAgua">
+                            <label for="agua4" class="form-check-label">Entre 1.5L e 2L</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="agua5" name="check5" value="beberAgua">
+                            <label for="agua5" class="form-check-label">Mais de 2L</label>
+                        </div>                                        
+                    </div>
+                </div>
+
+                <div class="row pb-5">
+                    <div class="col-xs-12 textCenter">
+                        <button type="button" class="btn btn-secondary" onclick="submitForm()">ENVIAR</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+     <!--BOOSTRAP-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+     <!-- JAVASCRIPT FORMULARIO -->
+     <script src="scripts/formularioNutricao.js"></script>
+</body>
+</html>

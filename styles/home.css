@@ -1,0 +1,98 @@
+/*HOME 1*/
+#home1 {
+    display: flex;
+    align-items: center;
+}
+
+#home1 svg {
+    width: 50vw;
+}
+
+/*FINAL HOME 1*/
+
+/*HOME 2*/
+#home2 {
+    padding-top: 5rem;
+}
+
+#home2 p {
+    padding-top: 2.5rem;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+/*FINAL HOME 2*/
+
+/*HOME 3*/
+.home3Tabelas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+
+.tabelaHome {
+    margin-bottom: 5rem;
+}
+
+.tabelaHome tr {
+    line-height: 4rem;
+}
+
+.tabelaHome td {
+    color: white;
+}
+
+.tabelaHome td a{
+    color: white;
+}
+
+.alinhaDireita {
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.alinhaEsquerda {
+    text-align: left;
+}
+
+.alinhaCentro {
+    text-align: center;
+}
+
+/* MAPA */ 
+#myCanvas {
+    display: inline-block;    
+    margin-bottom: 2.5rem;
+}
+
+#myCanvasDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#myCanvasDiv canvas {
+    width: 100%;
+    height: 100%;
+}
+/* FINAL MAPA */ 
+/*FINAL HOME 3*/
+
+/*HOME 4*/
+#home4 {
+    padding-top: 5rem;
+}
+
+#home4 p {
+    padding-top: 2.5rem;
+}
+
+/*FINAL HOME 4*/

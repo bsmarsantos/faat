@@ -1,0 +1,23 @@
+#nutricao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nutricao img {
+    height: 50rem;
+    width: auto;
+}
+
+.flexCentrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colunaEsquerda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

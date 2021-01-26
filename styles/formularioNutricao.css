@@ -1,0 +1,10 @@
+#formularioNutricao{
+    height: auto;
+}
+
+.videoNutricao {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+}
+

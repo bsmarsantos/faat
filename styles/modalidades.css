@@ -1,0 +1,30 @@
+.flexCentrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalidadesImagem {
+    width: 100%;
+    height: auto;
+    max-height: 20rem;
+    object-fit: cover;
+    filter: blur(1rem) grayscale(1) brightness(0.5);
+}
+
+.containerModalidade {
+    overflow: hidden;
+    position: relative;
+}
+
+.containerModalidade img:hover {
+    filter: blur(0) grayscale(0) brightness(1);
+}
+
+.containerModalidade p {
+    position: absolute;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: 2rem;
+    left: 4rem;
+}

@@ -1,0 +1,30 @@
+#junta-teNos img {
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.colunaDireita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.imagemEsquerda {
+    position: relative;
+}
+
+.imagemEsquerda p:nth-child(even) {
+    position: absolute;
+    bottom: 10rem;
+    left: 5rem;
+}
+
+.imagemEsquerda p:nth-child(odd) {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+}
